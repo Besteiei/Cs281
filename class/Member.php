@@ -1,5 +1,3 @@
-
-
 <?php
 
 class Member
@@ -12,6 +10,44 @@ class Member
   private $_address;
   private $_email;
 
+  public function setID($id){
+    $this->_id = $id;
+  }
+  public function getID(){
+    return $id;
+  }
+  public function setpwd($pwd){
+    $this->_pwd =  $pwd;
+  }
+  public function getpwd(){
+    return $pwd;
+  }
+  public function setname($name){
+    $this->_name =  $name;
+  }
+  public function getname(){
+    return $name;
+  }public function setlname($lname){
+    $this->_lname =  $lname;
+  }
+  public function getlname(){
+    return $lname;
+  }public function settype($type){
+    $this->_type =  $type;
+  }
+  public function gettype(){
+    return $type;
+  }public function setaddress($address){
+    $this->_address =  $address;
+  }
+  public function getaddress(){
+    return $address;
+  }public function setemail($email){
+    $this->_email =  $email;
+  }
+  public function getemail(){
+    return $email;
+  }
   public function __construct($id,$pwd,$name,$lname,$type,$address,$email)
   {
 
